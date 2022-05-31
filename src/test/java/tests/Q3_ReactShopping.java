@@ -1,4 +1,4 @@
-package tests.Practice;
+package tests;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,7 +13,7 @@ import java.text.DecimalFormat;
 import java.time.Duration;
 import java.util.*;
 
-public class Q3 {
+public class Q3_ReactShopping {
 
     @Test
     public void test01() {
@@ -55,7 +55,7 @@ public class Q3 {
         Double actualTotal = Double.parseDouble(reactShoppingPage.subTotalElement.getText().replace("$","").trim());
 
         sumOfRandomPrices = Double.parseDouble(new DecimalFormat("##.##").format(sumOfRandomPrices));
-        
+
 
         // 5.Her bir öğenin fiyatını toplayın ve sonucunuzu web sitesiyle karşılaştırın
         Assert.assertEquals(actualTotal , sumOfRandomPrices);

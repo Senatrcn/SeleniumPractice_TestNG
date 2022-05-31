@@ -1,4 +1,4 @@
-package tests.Practice;
+package tests;
 
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -7,7 +7,7 @@ import pages.DemoGuruPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class Q4 {
+public class Q4_DemoGuru {
 
     @Test
     public void test01() {
